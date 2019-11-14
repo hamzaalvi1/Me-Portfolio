@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body{
+    background-color: whitesmoke;
+}
+@font-face{
+    font-family: "Raleway-ExtraBold";
+    src: url("/fonts/Raleway/Raleway-ExtraBold.ttf");
+
+} 
+@font-face{
+    font-family: "Raleway-Medium";
+    src: url("/fonts/Raleway/Raleway-Medium.ttf");
+
+}
+@font-face{
+    font-family: "KaushanScript-Regular";
+    src: url("/fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+
+}
+@font-face{
+    font-family: "Lato-BoldItalic";
+    src: url("/fonts/Lato/Lato-BoldItalic.ttf");
+
+}
+@font-face{
+    font-family: "Lato-Regular";
+    src: url("/fonts/Lato/Lato-Regular.ttf");
+
+}
+/* navbar */
+.navbar{
+    position: sticky;
+    top: 0px;
+    background: dodgerblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    height: 60px
+}
+.navbar .navigation{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+
+}
+.navigation li{
+padding: 0.8rem 3rem;
+}
+.navigation a{
+    text-decoration: none;
+    font-family: "Raleway-Medium";
+    color: white;
+    text-shadow: 1px 1px 1px grey;
+    letter-spacing: 1px;
+    
+}
+.navbar .portfolio-logo{
+    font-family: "KaushanScript-Regular" ;
+    text-shadow: 1px 1px 1px grey;
+    font-size: 27px;
+}
+.navigation li:hover{
+    background-color: deepskyblue;
+    border-radius: 3px;
+}
+
+/* about my self*/
+.about-myself{
+    background: url(/Images/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
+    background-position: top center;
+    background-size: cover;
+
+    height: 100vh;
+
+}
+.about-myself .myself{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 30px
+}
+.myself h1{
+    color: white;
+    font-family:"KaushanScript-Regular";
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px gray;
+    
+}
+.myself h3{
+    color: white;
+    font-family:"KaushanScript-Regular";
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px gray;
+}
+.myself .btn{
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway-Medium";
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    text-shadow: 1px 1px 1px gray;
+    letter-spacing: 1px;
+}
+.myself .btn:hover{
+    background-color: deepskyblue;
+}
+/* service heading */
+#heading-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-family: "Lato-BoldItalic";
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    text-shadow: 1px 0px 1px grey;
+    color: dodgerblue
+}
+/* about my services */
+.about-myservice{
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-myservice .myservice{
+    width: 45%;
+    height: 245px;
+    background-color: white;
+    text-align: center;      
+    box-shadow: 1px 1px 1px grey;
+    margin: 10px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+.myservice img{
+     height: 60px;
+     width: 53px;
+     padding-bottom: 10px
+ }   
+.myservice p{
+    font-family: "Lato-Regular";
+    line-height: 1.5rem; 
+    font-size : 14px;
+    text-align: center;
+    color: slategray;  
+    padding: 0px 15px
+}
+.myservice h3{
+    font-family: "Lato-BoldItalic";
+    font-size: 23px;
+    line-height: 1rem;
+    padding-bottom: 10px;
+    color: slategray;   
+    
+
+}
+/* About myself */
+#heading-aboutmyself{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    font-family: "Lato-BoldItalic";
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    text-shadow: 1px 0px 1px grey;
+    color: dodgerblue;
+    padding-left: 3em;
+    text-decoration: underline;
+
+}
