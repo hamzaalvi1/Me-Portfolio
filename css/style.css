@@ -31,15 +31,20 @@ body{
     src: url("/fonts/Lato/Lato-Regular.ttf");
 
 }
+@font-face{
+    font-family: "Lato-LightItalic";
+    src: url("/fonts/Lato/Lato-LightItalic.ttf");
+
+}
 /* navbar */
 .navbar{
     position: sticky;
-    top: 0px;
+    top: 4px;
     background: dodgerblue;
     color: white;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 4;
     height: 60px
 }
 .navbar .navigation{
@@ -69,7 +74,9 @@ padding: 0.8rem 3rem;
     background-color: deepskyblue;
     border-radius: 3px;
 }
-
+.navigation .none:hover{
+    background-color:dodgerblue
+}
 /* about my self*/
 .about-myself{
     background: url(/Images/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
@@ -114,6 +121,8 @@ padding: 0.8rem 3rem;
 .myself .btn:hover{
     background-color: deepskyblue;
 }
+
+
 /* service heading */
 #heading-service{
     display: flex;
@@ -150,12 +159,14 @@ padding: 0.8rem 3rem;
      padding-bottom: 10px
  }   
 .myservice p{
-    font-family: "Lato-Regular";
+    font-family: "Lato-LightItalic";
     line-height: 1.5rem; 
     font-size : 14px;
     text-align: center;
     color: slategray;  
-    padding: 0px 15px
+    padding: 0px 15px;
+    font-weight: bold
+
 }
 .myservice h3{
     font-family: "Lato-BoldItalic";
@@ -169,7 +180,7 @@ padding: 0.8rem 3rem;
 /* About myself */
 #heading-aboutmyself{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     height: 200px;
     font-family: "Lato-BoldItalic";
@@ -177,7 +188,184 @@ padding: 0.8rem 3rem;
     font-size: 1.6rem;
     text-shadow: 1px 0px 1px grey;
     color: dodgerblue;
-    padding-left: 3em;
-    text-decoration: underline;
 
+}
+.aboutme{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutme .about-me{
+    width: 300px;
+    height: 420px;
+    background-color: white;
+    text-align: center;      
+    box-shadow: 1px 1px 1px grey;
+    margin: 10px;
+    border-radius: 2px;
+}
+.aboutme p{
+    font-family: 'Lato-LightItalic';
+    line-height: 2.3rem; 
+    font-size : 15px;
+    text-align: center;
+    color: slategray;  
+    padding: 0px 20px;
+    padding-top: 22px;
+    font-weight: bold
+}
+/* my clients */
+#heading-clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-family: "Lato-BoldItalic";
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    text-shadow: 1px 0px 1px grey;
+    color: dodgerblue;
+
+}
+.aboutclient{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutclient .about-client-info{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    text-align: center;      
+    box-shadow: 1px 1px 1px grey;
+    margin: 10px;
+    border-radius: 2px;
+}
+.about-client-info img{
+    height: 200px;
+    width: 250px
+}
+.about-client-info .chums{
+    height: 200px;
+    width: 120px;
+}
+/* contact me */
+#heading-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-family: "Lato-BoldItalic";
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    text-shadow: 1px 0px 1px grey;
+    color: dodgerblue;
+
+}
+.contact-detail{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.material-icons{
+    color: dodgerblue;
+    font-size: 4rem;
+    text-shadow: 0px 0px 1px grey;
+
+
+}
+.icon-box{
+    width: 45%;
+    height: 180px;
+    text-align: center;      
+    margin: 10px;
+    border-radius: 2px;
+    color: slategrey;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato-LightItalic';
+    font-weight: bold;
+    
+}
+/* contact-form */
+.contact-form{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: flex-start;
+}
+.contact-form p{
+    font-family: 'Lato-LightItalic';
+    font-weight: bold;
+    color:slategray;
+    word-spacing: 4px;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+.form-group label{
+    display:block;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-family: "Lato-LightItalic";
+    font-size: 19px;
+    color:slategray;
+
+}
+.form-group input{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 1320px
+
+}
+.form-group input:focus{
+    outline: none;
+    border: 1px solid dodgerblue; 
+}
+.form-group textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    height: 150px;
+}
+.form-group textarea:focus{
+    outline: none;
+    border: 1px solid dodgerblue; 
+}
+.send-message{
+    display: block;
+    margin: auto;
+    background: dodgerblue;
+    color: white;
+    padding: 10px 17px;
+    width: 160px;
+    border-radius: 4px;
+    border: none;
+    margin-top: 25px;
+    font-family: "Raleway-Medium";
+    text-shadow: 1px 1px 1px grey;
+    margin-bottom: 40px;
+    font-size: 15px
+
+}
+.send-message:hover{
+    background: deepskyblue;
+    color: white;
+    cursor: pointer;
+}
+/* Footer */
+.footer-content{
+    background: dodgerblue;
+    text-align: center;
+    color: white;
+    padding: 8px 10px;
+    font-family: "Lato-LightItalic";    
+    font-size: 18px;
+    text-shadow: 1px 1px 1px grey;
+    font-weight: bold;
+    
 }
